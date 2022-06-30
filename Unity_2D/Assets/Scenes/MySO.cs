@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MySO : ScriptableObject
 {
+  public float value;
   public new string name;
   public string description;
 
