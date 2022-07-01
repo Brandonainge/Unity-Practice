@@ -1,15 +1,23 @@
 using UnityEngine;
+using System.Collections;
 
 [CreateAssetMenu]
 
 public class Vector3Data : ScriptableObject
 {
-    public void Start()
-    {
-        Vector3 pos = transform.position;
-        pos = new Vector3(12, 2, 24);
+    Vector2 pos;
+    
 
-        Transform tran = transform;
-        tran.position = new Vector3(12, 2, 24);
+    void Start()
+    {
+        pos = new Vector2 (5f, 6f);
+        Debug.Log (pos.x);
+        Debug.Log (pos.y);
+    }
+
+
+    void Update ()
+    {
+
     }
 }
